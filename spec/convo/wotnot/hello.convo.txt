@@ -1,0 +1,26 @@
+hello
+
+#bot
+Hi there!
+
+I'm Florence - your personal care assistant.
+
+#bot
+WAITFORBOT 2000
+IMAGE https://media.giphy.com/media/zAQzMspkNl2Ao/giphy.gif
+
+#bot
+test
+BUTTONS Book Doctor Appointment | Book Health Checkup
+
+#me
+PAUSE 2000
+BUTTON Book Doctor Appointment
+
+#bot
+WAITFORBOT 30000
+IMAGE https://media.giphy.com/media/zAQzMspkNl2Ao/giphy.gif
+
+#bot
+test
+BUTTONS Book Doctor Appointment | Book Health Checkup

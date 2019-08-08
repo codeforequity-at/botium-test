@@ -1,0 +1,31 @@
+{
+  "name": "botium-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "mocha": "mocha --reporter mochawesome --reporter-options \"inline=true, reportDir=Bot-reports,reportFilename= botreport_,ts=dd-mm-yyyy\" --exit spec/botium.spec.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "botium-connector-webdriverio": "^0.1.1",
+    "mochawesome": "^4.0.1",
+    "node-fetch": "^2.6.0"
+  },
+  "botium": {
+    "convodirs": [
+      "spec/convo"
+    ],
+    "expandConvos": true,
+    "expandUtterancesToConvos": false,
+    "expandScriptingMemoryToConvos": false
+  },
+  "devDependencies": {
+    "botium-bindings": "^2.0.16",
+    "botium-connector-echo": "latest",
+    "mocha": "latest"
+  }
+}

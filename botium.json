@@ -1,0 +1,40 @@
+{
+  "botium": {
+    "Capabilities": {
+      "PROJECTNAME": "WebdriverIO Plugin Sample",
+      "CONTAINERMODE": "webdriverio",
+      "WAITFORBOTTIMEOUT" : "120000",
+      "WEBDRIVERIO_OPTIONS": {	
+				"desiredCapabilities": {
+					"browserName": "chrome",
+          "chromeOptions": {
+            "args": [ "--disable-site-isolation-trials"]
+          }
+				}
+      },
+      "SCRIPTING_NORMALIZE_TEXT":false,
+      "WEBDRIVERIO_URL": "https://app.test.wotnot.io/bot-preview/enPHQYeHbivN075400822074Q8KSU7in",
+      "WEBDRIVERIO_OPENBOT": "./snippets/openbot",
+      "WEBDRIVERIO_SENDTOBOT" : "./actions/send_to",
+      "WEBDRIVERIO_GETBOTMESSAGE" : "./actions/parse_bot",
+      "WEBDRIVERIO_INPUT_ELEMENT": ".message-box",
+      "WEBDRIVERIO_INPUT_ELEMENT_BUTTON" : ".message-options-button",
+      "WEBDRIVERIO_OUTPUT_ELEMENT": ".bot-message-container",
+      "WEBDRIVERIO_OUTPUT_ELEMENT_BUTTONS" : ".message-options-button",
+      "WEBDRIVERIO_START_SELENIUM": true,
+      "WEBDRIVERIO_START_SELENIUM_OPTS": {
+        "drivers": {
+          "chrome": {
+            "version": "2.43"
+          }
+        }
+      },
+      "ASSERTERS": [
+        {
+          "ref": "IMAGE",
+          "src": "./asserter/ImageAsserter.js"
+        }
+      ]
+    }
+  }
+}
