@@ -7,7 +7,7 @@ I'm Florence - your personal care assistant.
 
 #bot
 WAITFORBOT 2000
-IMAGE https://media.giphy.com/media/zAQzMspkNl2Ao/giphy.gif
+MEDIA https://media.giphy.com/media/zAQzMspkNl2Ao/giphy.gif
 
 #bot
 test
@@ -18,8 +18,9 @@ PAUSE 2000
 BUTTON Book Doctor Appointment
 
 #bot
+PAUSE 3000
 WAITFORBOT 30000
-IMAGE https://media.giphy.com/media/zAQzMspkNl2Ao/giphy.gif
+MEDIA https://media.giphy.com/media/zAQzMspkNl2Ao/giphy.gif
 
 #bot
 test
