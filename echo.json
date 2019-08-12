@@ -1,0 +1,59 @@
+{
+    "mutation": "createTestProject",
+    "data": {
+        "name": "Hello World - Test Suite",
+        "description": "Test Suite for Echo chatbot",
+        "code": "Hello-World-Test-Suite",
+        "tags": {
+            "set": [
+                "HelloWorld"
+            ]
+        },
+        "chatbot": {
+            "create": {
+                "name": "Echo Bot",
+                "description": "Chatbot simulator for evaluating Botium and Botium Box features. Sample commands: 'buttons', 'show me buttons', 'picture', 'show me a picture', 'card', 'show me a card'. Otherwise the input is echoed back.",
+                "tags": {
+                    "set": [
+                        "HelloWorld"
+                    ]
+                },
+                "capabilities": {
+                    "create": [
+                        { "name":"CONTAINERMODE","type":"STRING","stringValue":"echo" }
+                    ]
+                }
+            }
+        },
+        "testSets": {
+            "create": [
+                {
+                    "name": "Echo Sample",
+                    "description": "Just some basic sample scripts",
+                    "tags": {
+                        "set": [
+                            "HelloWorld"
+                        ]
+                    },
+                    "expandConvos": true,
+                    "expandUtterancesToConvos": false,
+                    "expandScriptingMemory": false,
+                    "scripts": {
+                        "create": [
+                            {
+                            "name": "give me picture",
+                            "scriptType": "SCRIPTING_TYPE_CONVO",
+                            "script": "give me picture\n\n#me\nHello, Bot!\n\n#bot\nYou said: Hello, Bot!\n\n#me\ngive me a picture\n\n#bot\nHere is a picture\nMEDIA http://www.botium.at/img/logo.png\n"
+                            },
+                            {
+                            "name": "give me buttons",
+                            "scriptType": "SCRIPTING_TYPE_CONVO",
+                            "script": "give me buttons\n\n#me\nHi Bot!\n\n#bot\nYou said: Hi Bot!\n\n#me\ngive me buttons\n\n#bot\nHere are some buttons\nBUTTONS First Button|Second Button\n"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+}
